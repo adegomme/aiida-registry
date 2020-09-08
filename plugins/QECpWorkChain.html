@@ -32,7 +32,7 @@
     
 <main>
     <h1 class="plugin-header">
-        AiiDA plugin package &quot;<a href="https://github.com/aiidalab/aiidalab-widgets-base">aiidalab-widgets-base</a>&quot;
+        AiiDA plugin package &quot;<a href="https://github.com/rikigigi/aiida-QECpWorkChain">aiida-QECpWorkChain</a>&quot;
     </h1>
     <p><a href="../index.html">&lt; back to the registry index</a></p>
 
@@ -43,14 +43,18 @@
             <img class="svg-badge" src="../static/img/status-beta-d6af23.svg" title="Adds new functionality, not yet ready for production. Testing welcome!">
         </p>
         
+        <p>
+            <strong>Short description</strong>: Car-Parrinello Work Chain with Quantum Espresso. This workchain does a full CP simulation, from the choice of the electronic mass and the timestep, to the choice of the best parallelization options, and then it does the NPT equilibration and a final NVE simulation at the prescribed P and T. Automates as much as possible.
+        </p>
+        
         
         <p>
-            <strong>How to install</strong>: <code>pip install --pre aiidalab-widgets-base</code>
+            <strong>How to install</strong>: <code>pip install git+https://github.com/rikigigi/aiida-QECpWorkChain</code>
         </p>
         
 
         <p>
-            <strong>Source code</strong>: <a href="https://github.com/aiidalab/aiidalab-widgets-base" target="_blank">Go to the source code repository</a>
+            <strong>Source code</strong>: <a href="https://github.com/rikigigi/aiida-QECpWorkChain" target="_blank">Go to the source code repository</a>
         </p>
     </div>
 
@@ -67,18 +71,18 @@
     
     <div id='description'>
         <p>
-            <strong>Author(s)</strong>: 
+            <strong>Author(s)</strong>: Riccardo Bertossa
         </p>
         
         <p>
-            <strong>Contact</strong>: <a href="mailto:aiidalab@materialscloud.org">aiidalab@materialscloud.org</a>
+            <strong>Contact</strong>: <a href="mailto:rbertoss@sissa.it">rbertoss@sissa.it</a>
         </p>
         
         <p>
-            <strong>How to use from python</strong>: <code>import aiidalab_widgets_base</code>
+            <strong>How to use from python</strong>: <code>import aiida_QECpWorkChain</code>
         </p>
         <p>
-            <strong>Most recent version</strong>: 1.0.0b10
+            <strong>Most recent version</strong>: 0.1.0a0
         </p>
         <p>
             <strong>Compatibility</strong>:
@@ -86,8 +90,32 @@
         </p>
 
         
+        <h3>Plugins provided by the package</h3>
+
         
-        <p>No entry points defined for this plugin.</p>
+        <span class="badge">
+            <span class="badge-left green">Workflows</span>
+            <span class="badge-right">1</span>
+        </span>
+        
+        
+        
+
+            
+                <h4>
+                    
+                      WorkChains and work functions <span class="entrypointraw">(aiida.workflows)</span>
+                    
+                </h4>
+                <ul>
+                
+                <li><code>qecpworkchain.cp</code>
+                    <div class="classbox">class<span class="tooltiptext">
+                        aiida_QECpWorkChain.workflow:CpWorkChain
+                    </span></div></li>
+                
+                </ul>
+            
         
     </div>
     
